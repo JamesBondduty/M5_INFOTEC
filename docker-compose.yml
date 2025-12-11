@@ -12,7 +12,7 @@ services:
       - laravel-network
 
 
-  application:
+  laravelAPP:
     image: 'bitnamilegacy/laravel:latest'
     environment:
       - LARAVEL_DATABASE_TYPE=mysql
