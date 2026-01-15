@@ -1,6 +1,8 @@
 <?php
 
+
 return [
+
 
     /*
     |--------------------------------------------------------------------------
@@ -13,10 +15,14 @@ return [
     |
     */
 
+
     'defaults' => [
-        'guard' => env('AUTH_GUARD', 'web'),
-        'passwords' => env('AUTH_PASSWORD_BROKER', 'users'),
+        'guard' => 'api',
+        'passwords' => ''AUTH_PASSWORD_BROKER', 'users'',
     ],
+
+
+
 
     /*
     |--------------------------------------------------------------------------
@@ -35,12 +41,22 @@ return [
     |
     */
 
+
     'guards' => [
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+
+        'api' => [
+            'driver' => 'keycloak',
+            'provider' => 'users',
+        ],
     ],
+
+
+
 
     /*
     |--------------------------------------------------------------------------
@@ -59,17 +75,20 @@ return [
     |
     */
 
+
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
             'model' => env('AUTH_MODEL', App\Models\User::class),
         ],
 
+
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
     ],
+
 
     /*
     |--------------------------------------------------------------------------
@@ -90,6 +109,7 @@ return [
     |
     */
 
+
     'passwords' => [
         'users' => [
             'provider' => 'users',
@@ -98,6 +118,7 @@ return [
             'throttle' => 60,
         ],
     ],
+
 
     /*
     |--------------------------------------------------------------------------
@@ -110,6 +131,8 @@ return [
     |
     */
 
+
     'password_timeout' => env('AUTH_PASSWORD_TIMEOUT', 10800),
+
 
 ];
