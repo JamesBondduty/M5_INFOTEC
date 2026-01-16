@@ -11,8 +11,7 @@ services:
     networks:
       - laravel-network
 
-
-  laravelAPP:
+  application:
     image: 'bitnamilegacy/laravel:latest'
     environment:
       - LARAVEL_DATABASE_TYPE=mysql
@@ -30,11 +29,9 @@ services:
     networks:
       - laravel-network
 
-
 volumes:
   mariadb_data:
     driver: local
-
 
 networks:
   laravel-network:

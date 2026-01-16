@@ -17,4 +17,3 @@ class Ponente extends Model
         'especialidad'
     ];
 }
-

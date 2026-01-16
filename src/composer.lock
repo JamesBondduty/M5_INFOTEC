@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ec98fa1905c4cb2613887fe024f1e3a",
+    "content-hash": "e354d504d418d7f9bcd4ac7a0ca1fe46",
     "packages": [
         {
             "name": "brick/math",
@@ -1406,16 +1406,16 @@
         },
         {
             "name": "laravel/passport",
-            "version": "v13.4.1",
+            "version": "v13.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/passport.git",
-                "reference": "98173ac70d1b50c4d2ba37d8216e0f41b9f1a443"
+                "reference": "de00e4767b8f7207437fb8e54f17c33468074422"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/passport/zipball/98173ac70d1b50c4d2ba37d8216e0f41b9f1a443",
-                "reference": "98173ac70d1b50c4d2ba37d8216e0f41b9f1a443",
+                "url": "https://api.github.com/repos/laravel/passport/zipball/de00e4767b8f7207437fb8e54f17c33468074422",
+                "reference": "de00e4767b8f7207437fb8e54f17c33468074422",
                 "shasum": ""
             },
             "require": {
@@ -1440,10 +1440,8 @@
                 "symfony/psr-http-message-bridge": "^7.1"
             },
             "require-dev": {
-                "mockery/mockery": "^1.6",
-                "orchestra/testbench": "^9.9|^10.0",
-                "phpstan/phpstan": "^2.0",
-                "phpunit/phpunit": "^11.5|^12.0"
+                "orchestra/testbench": "^9.15|^10.8",
+                "phpstan/phpstan": "^2.0"
             },
             "type": "library",
             "extra": {
@@ -1479,7 +1477,7 @@
                 "issues": "https://github.com/laravel/passport/issues",
                 "source": "https://github.com/laravel/passport"
             },
-            "time": "2025-11-21T20:53:49+00:00"
+            "time": "2025-12-15T16:11:04+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -3300,16 +3298,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "3.0.47",
+            "version": "3.0.48",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "9d6ca36a6c2dd434765b1071b2644a1c683b385d"
+                "reference": "64065a5679c50acb886e82c07aa139b0f757bb89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/9d6ca36a6c2dd434765b1071b2644a1c683b385d",
-                "reference": "9d6ca36a6c2dd434765b1071b2644a1c683b385d",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/64065a5679c50acb886e82c07aa139b0f757bb89",
+                "reference": "64065a5679c50acb886e82c07aa139b0f757bb89",
                 "shasum": ""
             },
             "require": {
@@ -3390,7 +3388,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.47"
+                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.48"
             },
             "funding": [
                 {
@@ -3406,7 +3404,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-10-06T01:07:24+00:00"
+            "time": "2025-12-15T11:51:42+00:00"
         },
         {
             "name": "psr/clock",
@@ -4209,66 +4207,6 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.9.1"
             },
             "time": "2025-09-04T20:59:21+00:00"
-        },
-        {
-            "name": "robsontenorio/laravel-keycloak-guard",
-            "version": "1.6.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/robsontenorio/laravel-keycloak-guard.git",
-                "reference": "6a2f40813a80d7343b24979e0797562d8c2618d7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/robsontenorio/laravel-keycloak-guard/zipball/6a2f40813a80d7343b24979e0797562d8c2618d7",
-                "reference": "6a2f40813a80d7343b24979e0797562d8c2618d7",
-                "shasum": ""
-            },
-            "require": {
-                "ext-openssl": "*",
-                "firebase/php-jwt": "^6.3",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.10",
-                "nunomaduro/collision": "^6.3",
-                "orchestra/testbench": "^7.7",
-                "pestphp/pest": "^1.22",
-                "phpunit/phpunit": "^9.5"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "KeycloakGuard\\KeycloakGuardServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "KeycloakGuard\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Robson Tenório"
-                }
-            ],
-            "description": "🔑 Simple Keycloak Guard for Laravel",
-            "homepage": "https://github.com/robsontenorio/laravel-keycloak-guard",
-            "keywords": [
-                "keycloak",
-                "laravel"
-            ],
-            "support": {
-                "issues": "https://github.com/robsontenorio/laravel-keycloak-guard/issues",
-                "source": "https://github.com/robsontenorio/laravel-keycloak-guard/tree/1.6.3"
-            },
-            "time": "2024-12-28T19:18:43+00:00"
         },
         {
             "name": "symfony/clock",
