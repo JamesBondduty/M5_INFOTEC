@@ -21,7 +21,7 @@ services:
       - LARAVEL_DATABASE_USER=bn_myapp
       - LARAVEL_DATABASE_PASSWORD=b1tnam1_my@pp
     ports:
-      - '8000:8000'
+      - '8080:8000'
     volumes:
       - './src:/app'
     depends_on:
